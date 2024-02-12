@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+} /* will change the css reset */
+
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red-background-color: hsla(0, 100%, 67%, 0.040);
+    --orangey-yellow-background-color: hsla(39, 100%, 56%, 0.060);
+    --green-teal-background-color: hsla(166, 100%, 37%, 0.060);
+    --cobalt-blue-background-color: hsla(234, 85%, 45%, 0.060);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Hanken Grotesk";
+}
+
+.component-main{
+    text-align: center;
+    width:100%;
+}
+
+.component-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 44%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background: linear-gradient(to top, var(--light-royal-blue), var(--light-slate-blue));
+}
+
+.component-result p:first-child{
+    font-size: 1.14rem;
+    padding: 26px 0;
+    color: var(--light-lavender);
+}
+
+.component-points{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    color: var(--white);
+    background: linear-gradient(to top, var(--persian-blue), var(--violet-blue));
+}
+
+h1{ 
+    font-size: 3.5rem;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.component-points p{
+    color: var(--light-lavender);
+    margin-top: 5px;
+}
+
+.component-description{
+    width: 70%;
+    color: var(--white);
+}
+
+.component-description h3{
+    font-size: 1.5rem;
+    padding: 26px 0 9px;
+}
+
+.component-description p{
+    line-height: 21px;
+    color: var(--light-lavender);
+}
+
+.component-summary{
+    height: 56%;
+    background-color: var(--white);
+    font-size: 1.1rem;
+}
+
+.component-summary h3{
+    padding: 24px 0 0 30px;
+    text-align: left;
+}
+
+.component-result-buttons ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+    list-style-type: none;
+}
+
+.component-result-buttons li{
+    width: 78%;
+    height: 3.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.component-result-reaction{
+    color: var(--light-red);
+    background-color: var(--light-red-background-color);
+}
+
+.component-result-memory{
+    color: var(--orangey-yellow);
+    background-color: var(--orangey-yellow-background-color);
+}
+
+.component-result-verbal{
+    color: var(--green-teal);
+    background-color: var(--green-teal-background-color);
+}
+
+.component-result-visual{
+    color: var(--cobalt-blue);
+    background-color: var(--cobalt-blue-background-color);
+}
+
+.component-result-left-side{
+    display: flex;
+    font-weight: 800;
+}
+
+.points{
+    padding-right: 8px;
+}
+
+.blc-accent{
+    color: black;
+}
+
+.component-result-buttons li p{
+    padding-left: 13px;
+    padding-top: 6px;
+}
+
+.component-result-left-side img{
+    width: 20px;
+    padding-left: 5px;
+}
+
+.component-result-buttons span{
+    color: black;
+}
+
+.component-continue-button{
+    padding-top: 40px;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 85%;
+    border-radius: 60px;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgba(20, 20, 117, 0.986);
+}
+
+@media only screen and (min-width: 750px){
+    
+      .component-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .component-result{
+        width: 23rem;
+        height: 32rem;
+        border-radius: 29px;
+        -webkit-box-shadow: 0 11px 23px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0 11px 23px -9px rgba(66, 68, 90, 1);
+        box-shadow: 0 11px 23px -9px rgba(66, 68, 90, 1);
+    }
+    .component-result p:first-child{
+        font-size: 1.5rem;
+        margin-top: 12px;
+    }
+    .component-summary{
+        width: 23rem;
+        height: 32rem;
+        border-radius: 29px;
+    }
+    .component-points{
+        width: 12.5rem;
+        height: 12.5rem;
+        margin-top: 15px;
+    }
+    h1{
+        font-size: 4.5rem;
+        margin-top: 50px;  
+    }
+    .component-points p{
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .component-description h3{
+        font-size: 2rem;
+        margin-top: 3px;
+    }
+    
+    .component-description p{
+        font-size: 1.1rem;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    .component-summary h3{
+        font-size: 1.5rem;
+        padding: 40px 0 0 40px;
+    }
+    .component-result-buttons ul{
+        margin-top: 35px;
+    }
+    .component-result-buttons li{
+        width: 73%;
+    }
+    button{
+        height: 6.6vh;;
+        width: 80%;
+    }
+    .component-continue-button{
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-height: 815px)
+{
+    .component-result p:first-child{
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .component-points{
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+    .component-points p{
+        font-size: 0.9rem;
+    }
+    .component-description h3{
+        font-size: 1.1rem;
+    }
+    .component-description p,
+    .component-summary {
+        font-size: 0.9rem;
+    }
+    .component-summary h3{
+        padding: 18px 0 0 25px;
+    }
+    .component-continue-button {
+        padding-top: 10px;
+    }
+    .component-result-buttons ul{
+        margin-top: 20px;
+    }
+}
+
+
+
+
